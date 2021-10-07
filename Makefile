@@ -1,10 +1,13 @@
 FC = gfortran 
 source = histToGraph.f90
-all : htg
+all : htg 
 
 
 htg : $(source)
 	$(FC) -o $@  $(source)
+
+install: 
+	@mv htg /usr/bin/ 
 
 .PHONY : clean
 
