@@ -4,11 +4,6 @@
 ! FIRST EDIT: 04/10/2021
 ! LAST EDIT: 07/10/2021
 
-! TO GENERATE THE EXECUTABLE, RUN "gfortran histToGraph.f90 -o htg" WHERE histToGraph.f90 FILE IS LOCATED
-! AN EXECUTABLE NAMED "htg" WILL BE CREATED
-! EDIT ~/.bashrc FILE AND ADD THIS LINE: "export PATH=$PATH:YOURPATH", YOURPATH IS THE PATH OF THE EXECUTABLE "htg"
-! TO RUN THE PROGRAM, OPEN A TERMINAL WHERE YOUR RAW HISTOGRAM FILE IS LOCATED AND RUN ...
-! "htg 'inputfile'"   OR   "htg 'inputfile' 'outputfile'"
 
 program histToGraph 
 implicit none
