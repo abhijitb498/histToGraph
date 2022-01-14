@@ -97,14 +97,14 @@ do
 enddo 
 
 ! REMOVING OUTPUT GRAPH FILE, COMMENT OUT IF YOU NEEDED
-print*,'Do you want to delete the ouput graph file? Y/N?'
+print*,'Do you want to save the ouput graph file? Y/N?'
 
 do 
 read*,response 
 if (response == 'Y' .or. response == 'y') then 
-   call execute_command_line('rm '//outname)
    exit 
 elseif (response == 'N' .or. response == 'n') then 
+   call execute_command_line('rm '//outname)
    exit 
 else 
    print*,'Enter a valid command, e.g. Y/N'
