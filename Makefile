@@ -1,5 +1,5 @@
 FC = gfortran 
-source = histToGraph.f90
+source = hist_mod.f90 histToGraph_v2.f90 
 all : htg 
 
 
@@ -7,7 +7,8 @@ htg : $(source)
 	$(FC) -o $@  $(source)
 
 install: 
-	@mv htg /usr/bin/ 
+	@cp htg /usr/bin/ 
+	@cp hist_mod.mod /usr/lib/gcc/x86_64-linux-gnu/9/finclude/
 
 .PHONY : clean
 
