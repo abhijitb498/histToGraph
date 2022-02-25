@@ -123,19 +123,9 @@ program histToGraph
    deallocate(hist,gr_hist)
    
    ! PLOTTING COMMAND
-   print*,'Whether you want to plot the histogram? Y/N?'
-   
-   do 
-      read*,response 
-      if (response == 'Y' .or. response == 'y') then 
-         call execute_command_line('gnuplot -p gp_hist.gp')
-         exit 
-      elseif (response == 'N' .or. response == 'n') then 
-         exit 
-      else 
-         print*,'Enter a valid command, e.g. Y/N'
-      endif 
-   enddo 
+   !print*,'Whether you want to plot the histogram? Y/N?'
+   call execute_command_line('gnuplot -p gp_hist.gp')
+
    
    ! REMOVING OUTPUT GRAPH FILE, COMMENT OUT IF YOU NEEDED
    print*,'Do you want to delete the ouput graph file? Y/N?'
