@@ -1,5 +1,5 @@
 FC = gfortran 
-source = hist_mod.f90 histToGraph_v2.f90 
+source = hist_mod.f90 histToGraph_v2.1.f90 
 all : htg 
 
 
